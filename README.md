@@ -1,54 +1,71 @@
-Nigeria Research Productivity Dashboard (2014-2023)
-This repository contains a single-page interactive web application that visualizes key trends and insights from a Master's thesis on Nigeria's research productivity and collaboration between 2014 and 2023. The dashboard allows users to explore national publication trends, institutional performance, disciplinary distribution, and authorship/collaboration dynamics through interactive charts and contextual information.
+### Nigeria Research Productivity Analysis
 
-Features
-National Overview: See the overall publication volume and annual growth rates for Nigerian research.
+This repository contains the data and code for a Master's thesis on Nigeria's research productivity. The project analyzes scholarly publication trends and collaboration dynamics from 2014 to 2023, using a dataset compiled from the Scopus database. The contents are designed to be fully transparent and reproducible.
 
-Institutional Deep-Dive: Click on top institutions to view their individual publication trends, disciplinary focus, and collaboration patterns.
+-----
 
-Disciplinary Landscape: Explore how research output is distributed across various academic disciplines (OECD classification) and observe their trends over time.
+### Repository Contents
 
-Authorship & Collaboration Dynamics: Understand authorship patterns (e.g., single-publication authors) and the distribution of local, regional, and international collaborations.
+  * **`data/`**: This directory is structured to maintain data integrity and reproducibility.
+      * `raw/`: Contains the original, unprocessed CSV files downloaded from Scopus.
+      * `processed/`: Holds the cleaned and transformed dataset used for the analysis.
+      * `country-file/`: Holds the cleaned and transformed dataset used for the analysis.
+  * **`notebooks/`**: This folder contains the Jupyter notebooks used for the entire research process.
+      * `Msc Proj Final Collection&Cleaning.ipynb`: Details the data acquisition, merging, and cleaning steps. It serves as a transparent pipeline for preparing the raw data for analysis.
+      * `Msc proj - Analysis.ipynb`: Contains the core analysis and visualizations, including publication trends, disciplinary distribution, and an exploration of authorship patterns.
+  * `LICENSE.md`: The full text of the Creative Commons license for the dataset.
+  * `CITATION.cff`: A file with machine-readable citation information for this repository.
+  * `README.md`: The project overview and guide you are reading now.
 
-Responsive Design: The dashboard is designed to be accessible and provide a good user experience across various devices (desktop, tablet, mobile).
+-----
 
-Technologies Used
-HTML5: For the core structure of the web application.
+### How to Reproduce the Analysis
 
-Tailwind CSS: For responsive and utility-first styling.
+This project is designed to be fully reproducible.
 
-JavaScript (Vanilla JS): For all interactive logic, data handling, and dynamic content updates.
+1.  **Clone the Repository:**
+    ```sh
+    git clone https://github.com/your-username/nigeria-research-productivity.git
+    cd nigeria-research-productivity
+    ```
+2.  **Dependencies:** Ensure you have the required libraries installed. You can install them using pip:
+    ```sh
+    pip install pandas numpy matplotlib seaborn
+    ```
+3.  **Run the Notebooks:**
+      * Start with `Msc Proj Final Collection&Cleaning.ipynb` to process the raw data.
+      * Then, run `Msc proj - Analysis.ipynb` to execute the analysis and generate the visualizations.
 
-Chart.js: For rendering all interactive data visualizations (line, bar, and doughnut charts).
+-----
 
-How to Use/Deploy
-This is a single-page static HTML application, making it very easy to deploy.
+### The Thesis
 
-Clone the Repository:
+The research presented here is the foundation for the Master's thesis:
 
-git clone https://github.com/your-username/nigeria-research-dashboard.git
-cd nigeria-research-dashboard
-
-Open in Browser:
-Simply open the index.html file directly in your web browser.
-
-Alternatively, you can deploy it using static site hosting services like:
-
-GitHub Pages: Upload index.html to your repository and enable GitHub Pages in your repository settings.
-
-Netlify: Drag and drop the index.html file onto the Netlify dashboard.
-
-Vercel: Connect your GitHub repository or drag and drop the index.html file.
-
-Data Source
-The data presented in this dashboard is derived from the Master's thesis:
-
-"Trends in Research Productivity and Collaboration in Nigeria"
-by Oladotun Jude Oguntola
+*"A Quantitative Analysis of Scholarly Productivity in Nigeria: A Scopus-Based Study on Publication Trends and the Applicability of Lotka's Law"*
+by Oladotun Oguntola
 Department of Data and Information Science, University of Ibadan, Nigeria
-April 2025
+[Year]
 
-The thesis utilized data primarily extracted from the Scopus database.
+**DOI:** [Insert DOI of your thesis here]
 
-Contribution
-This project was generated as an interactive visualization tool to make the findings of the aforementioned thesis more accessible and engaging.
+-----
+
+### The Dataset
+
+The **"Nigeria Research Productivity from 2014-2023"** dataset is a key output of this project. It is permanently archived on Zenodo for long-term preservation and citation.
+
+**DOI:** [Insert DOI of your Zenodo dataset here]
+
+-----
+
+### License
+
+The code in this repository is distributed under the MIT License.
+The dataset is licensed under a **[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**.
+
+-----
+
+### Citation
+
+If you use this dataset or code in your research, please cite the work as described in the `CITATION.cff` file.

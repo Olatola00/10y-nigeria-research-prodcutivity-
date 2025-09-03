@@ -20,21 +20,59 @@ This repository contains the data and code for a Master's thesis on Nigeria's re
 
 ### How to Reproduce the Analysis
 
+**Important Note:** Due to the large size of the main datasets, the raw and processed data files are **not included** in this GitHub repository. The notebooks are designed to run in a Google Colab environment and assume the necessary data files are accessible within your Google Drive.
+
 1.  **Clone the Repository:**
     ```sh
-    git clone https://github.com/your-username/nigeria-research-productivity.git
-    cd nigeria-research-productivity
+    git clone [https://github.com/your-username/10y-nigeria-research-prodcutivity-.git](https://github.com/your-username/10y-nigeria-research-prodcutivity-.git)
+    cd 10y-nigeria-research-prodcutivity-
     ```
-2.  **Dependencies:** Ensure you have the required libraries installed. You can install them using pip:
+2.  **Dependencies:** Ensure you have the required libraries installed. You can install them using pip within your Colab environment:
     ```sh
-    pip install pandas numpy matplotlib seaborn
+    !pip install pandas numpy matplotlib seaborn
     ```
-3.  **Folder schema:** Set your working directory to “10y-nigeria-research-prodcutivity-” and create data, src subfolders. Create subfolders for data as shown below.
+3.  **Prepare Your Data & Google Drive:**
+    * You will need to acquire the raw Scopus data based on the queries described in `A_Data_Collection.ipynb`.
+    * It is assumed that your data will be organized as follows in your Google Drive: `My Drive/Colab Notebooks/data/raw/` and `My Drive/Colab Notebooks/data/processed/`.
+    * **Folder Schema Illustration:**
+      My Drive/
+          └── 10y-nigeria-research-prodcutivity-/  <-- This is your cloned repo folder
+              ├── src/
+              │   ├── A_Data_Collection.ipynb
+              │   ├── B1_Country_Extraction.ipynb
+              │   ├── B2_Institution_Extraction.ipynb
+              │   ├── B3_OECD_Discipline_Categorization.ipynb
+              │   └── C_Main_Analysis.ipynb
+              ├── dashboard/
+              │   └── index.html
+              ├── data/  <-- You will create and manage this folder within Colab/Drive
+              │   ├── scopus_exports/  <-- Your raw Scopus CSVs go here
+              │   │   ├── export_by_year/
+              │   │   └── export_by_subject/
+              │   ├── scopus-country-region/
+              │   ├── nigerian_institutions/
+              │   └── processed/  <-- Cleaned data will be saved here by the notebooks
+              ├── CITATION.cff
+              ├── LICENSE.md
+              └── README.md  
+          
+4.  **Run the Notebooks in Google Colab:**
+    * Open the notebooks
+    * Start with `A_Data_Collection.ipynb`.
+    * Follow the files alphabetically (`B1_Country_Extraction.ipynb`, `B2_Institution_Extraction.ipynb`, `B3_OECD_Discipline_Categorization.ipynb`) to perform the data cleaning and transformation.
+    * Finally, run `C_Main_Analysis.ipynb` to execute the analysis and generate the visualizations.
 
-5.  **Run the notebooks in the src subfolder:**
-      * Start with `A_Data_Collection.ipynb`, follow the files in alphabetical to process the raw data.
-      * Finally, run `C_Main_Analysis.ipynb` to execute the analysis and generate the visualizations.
+-----
 
+### Dashboard
+
+The interactive dashboard, located in the `dashboard/` folder, provides a user-friendly visualization of the key findings from the thesis.
+
+**How to View the Dashboard:**
+
+* **Directly:** Open the `index.html` file in the `dashboard/` folder directly in your web browser.
+* **Via GitHub Pages:** You can deploy this static HTML application using GitHub Pages. Go to your repository settings on GitHub, navigate to "Pages," select the `main` branch, and choose the `/dashboard` folder as the source.
+  
 -----
 
 ### Citation

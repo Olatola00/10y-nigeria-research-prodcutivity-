@@ -5,14 +5,13 @@ This repository contains the data and code for a Master's thesis on Nigeria's re
 -----
 
 ### Repository Contents
-
-  * **`data/`**: This directory is structured to maintain data integrity and reproducibility.
-      * `raw/`: Contains the original, unprocessed CSV files downloaded from Scopus.
-      * `processed/`: Holds the cleaned and transformed dataset used for the analysis.
-      * `country-file/`: Holds the cleaned and transformed dataset used for the analysis.
-  * **`notebooks/`**: This folder contains the Jupyter notebooks used for the entire research process.
-      * `Msc Proj Final Collection&Cleaning.ipynb`: Details the data acquisition, merging, and cleaning steps. It serves as a transparent pipeline for preparing the raw data for analysis.
-      * `Msc proj - Analysis.ipynb`: Contains the core analysis and visualizations, including publication trends, disciplinary distribution, and an exploration of authorship patterns.
+* **`dashboard/`**: This folder contains the html file that presents an interactive dashboard base on the dataset.
+* **`src/`**: This folder contains the Jupyter notebooks used for the entire research process.
+      * `A_Data_Collection.ipynb`: Details the data acquisition steps and search queries used in Scopus.
+      * `B1_Country_Extraction.ipynb`: Details the data cleaning and data transformation steps involved in preparing the countries data.
+      * `B2_Institution_Extraction.ipynb`: Details data cleaning and data transformation steps involved in preparing the institutions data.
+      * `B3_OECD_Discipiline_Categorization.ipynb`: Details the data transformation steps and the methodology for categorizing all the subjects areas in to only six disciplines per the OECD's 2015 Franscati Manual.
+      * `C_Main_Analysis.ipynb`: Contains the core analysis and visualizations, including publication trends, disciplinary distribution, and an exploration of authorship patterns.
   * `LICENSE.md`: The full text of the Creative Commons license for the dataset.
   * `CITATION.cff`: A file with machine-readable citation information for this repository.
   * `README.md`: The project overview and guide you are reading now.
@@ -20,8 +19,6 @@ This repository contains the data and code for a Master's thesis on Nigeria's re
 -----
 
 ### How to Reproduce the Analysis
-
-This project is designed to be fully reproducible.
 
 1.  **Clone the Repository:**
     ```sh
@@ -32,30 +29,28 @@ This project is designed to be fully reproducible.
     ```sh
     pip install pandas numpy matplotlib seaborn
     ```
-3.  **Run the Notebooks:**
-      * Start with `Msc Proj Final Collection&Cleaning.ipynb` to process the raw data.
-      * Then, run `Msc proj - Analysis.ipynb` to execute the analysis and generate the visualizations.
+3.  **Folder schema:** Set your working directory to “10y-nigeria-research-prodcutivity-” and create data, src subfolders. Create subfolders for data as shown below.
+
+5.  **Run the notebooks in the src subfolder:**
+      * Start with `A_Data_Collection.ipynb`, follow the files in alphabetical to process the raw data.
+      * Finally, run `C_Main_Analysis.ipynb` to execute the analysis and generate the visualizations.
 
 -----
 
+### Citation
+
+If you use this code in your research, please cite the work as described in the `CITATION.cff` file.
+Oguntola o. (2025). Nigeria's Research Productivity : 2025 Thesis Final Code (1.0.0) [Python]. Zenodo. https://doi.org
+
 ### The Thesis
 
-The research presented here is the foundation for the Master's thesis:
-
-*"A Quantitative Analysis of Scholarly Productivity in Nigeria: A Scopus-Based Study on Publication Trends and the Applicability of Lotka's Law"*
-by Oladotun Oguntola
-Department of Data and Information Science, University of Ibadan, Nigeria
-[Year]
-
-**DOI:** [Insert DOI of your thesis here]
+Oguntola, O. (2025). Trends in Research Productivity and Collaboration in Nigeria [Zenodo]. https://doi.org/10.5281/zenodo.16928471
 
 -----
 
 ### The Dataset
 
-The **"Nigeria Research Productivity from 2014-2023"** dataset is a key output of this project. It is permanently archived on Zenodo for long-term preservation and citation.
-
-**DOI:** [Insert DOI of your Zenodo dataset here]
+Oguntola, O. (2025). Nigeria Research Production from 2014-2023 by institution by discipline by collaborating countries (v 1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.16928959
 
 -----
 
@@ -65,7 +60,3 @@ The code in this repository is distributed under the MIT License.
 The dataset is licensed under a **[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**.
 
 -----
-
-### Citation
-
-If you use this dataset or code in your research, please cite the work as described in the `CITATION.cff` file.

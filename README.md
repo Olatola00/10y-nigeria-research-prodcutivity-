@@ -35,7 +35,7 @@ This repository contains the data and code for a Master's thesis on Nigeria's re
     * You will need to acquire the raw Scopus data based on the queries described in `A_Data_Collection.ipynb`.
     * It is assumed that your data will be organized as follows in your Google Drive: `My Drive/Colab Notebooks/data/raw/` and `My Drive/Colab Notebooks/data/processed/`.
     * **Folder Schema Illustration:**
-          ```
+          ```sh
           My Drive/
           └── 10y-nigeria-research-prodcutivity-/  <-- This is your cloned repo folder
               ├── src/

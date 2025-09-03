@@ -35,26 +35,26 @@ This repository contains the data and code for a Master's thesis on Nigeria's re
     * You will need to acquire the raw Scopus data based on the queries described in `A_Data_Collection.ipynb`.
     * It is assumed that your data will be organized as follows in your Google Drive: `My Drive/Colab Notebooks/data/raw/` and `My Drive/Colab Notebooks/data/processed/`.
     * **Folder Schema Illustration:**
-      My Drive/
-          └── 10y-nigeria-research-prodcutivity-/  <-- This is your cloned repo folder
-              ├── src/
-              │   ├── A_Data_Collection.ipynb
-              │   ├── B1_Country_Extraction.ipynb
-              │   ├── B2_Institution_Extraction.ipynb
-              │   ├── B3_OECD_Discipline_Categorization.ipynb
-              │   └── C_Main_Analysis.ipynb
-              ├── dashboard/
-              │   └── index.html
-              ├── data/  <-- You will create and manage this folder within Colab/Drive
-              │   ├── scopus_exports/  <-- Your raw Scopus CSVs go here
-              │   │   ├── export_by_year/
-              │   │   └── export_by_subject/
-              │   ├── scopus-country-region/
-              │   ├── nigerian_institutions/
-              │   └── processed/  <-- Cleaned data will be saved here by the notebooks
-              ├── CITATION.cff
-              ├── LICENSE.md
-              └── README.md  
+My Drive/
+└── 10y-nigeria-research-prodcutivity-/  <-- This is your cloned repo folder
+    ├── src/
+    │   ├── A_Data_Collection.ipynb
+    │   ├── B1_Country_Extraction.ipynb
+    │   ├── B2_Institution_Extraction.ipynb
+    │   ├── B3_OECD_Discipline_Categorization.ipynb
+    │   └── C_Main_Analysis.ipynb
+    ├── dashboard/
+    │   └── index.html
+    ├── data/  <-- You will create and manage this folder within Colab/Drive
+    │   ├── scopus_exports/  <-- Your raw Scopus CSVs go here
+    │   │   ├── export_by_year/
+    │   │   └── export_by_subject/
+    │   ├── scopus-country-region/
+    │   ├── nigerian_institutions/
+    │   └── processed/  <-- Cleaned data will be saved here by the notebooks
+    ├── CITATION.cff
+    ├── LICENSE.md
+    └── README.md
           
 4.  **Run the Notebooks in Google Colab:**
     * Open the notebooks

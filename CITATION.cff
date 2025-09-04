@@ -3,8 +3,7 @@
 
 cff-version: 1.2.0
 title: >-
-  Nigeria Research Production from 2014-2023 by institution
-  by discipline by collaborating countries
+  Code REPO for Nigeria's research productivity analysis
 message: >-
   If you use this dataset, please cite it using the metadata
   from this file.
@@ -17,34 +16,12 @@ authors:
     orcid: 'https://orcid.org/0009-0001-9695-6677'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.16928959
+    value: 10.5281/zenodo.17053358
 repository-code: >-
   https://github.com/Olatola00/10y-nigeria-research-prodcutivity-
 abstract: >+
 
-
-  This dataset provides a comprehensive look at scholarly
-  publications affiliated with Nigerian institutions between
-  2014 and 2023. Compiled from the Scopus database, the
-  dataset is designed to be a valuable resource for
-  researchers, policymakers, and academics interested in the
-  dynamics of Nigerian research.
-
-
-  Key Features of the Dataset
-
-      Discipline-based Classification: Data is categorized using the OECD's Field of Science and Technology (FOS) classification, allowing for in-depth analysis of research output across various academic disciplines.
-      Institutional Insights: The dataset includes information on the institutions involved in each publication, enabling analysis of institutional productivity, trends, and collaboration networks.
-      Collaboration Metrics: It contains detailed information on co-authorship and collaborating countries, providing a clear picture of local, regional, and international research partnerships.
-      Citable & Reproducible: The dataset is fully integrated with the thesis repository, which includes the code used for its compilation and analysis. This ensures transparency and allows for the reproducibility of findings.
-
-  This dataset can be used to:
-
-      Analyze publication trends over time within specific disciplines or institutions.
-      Identify leading institutions and researchers in different fields.
-      Map collaboration networks between Nigerian and international institutions.
-      Apply and test bibliometric laws like Lotka's Law on a national scale.
-      Inform research policy and funding decisions for academic institutions in Nigeria.
+  This repository contains the data and code for a Master's thesis on Nigeria's research productivity. The project analyzes scholarly publication trends and collaboration dynamics from 2014 to 2023, using a dataset compiled from the Scopus database. The contents are designed to be fully transparent and reproducible.
 
 keywords:
   - '#bibliometrics'

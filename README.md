@@ -79,7 +79,7 @@ The interactive dashboard, located in the `dashboard/` folder, provides a user-f
 ### Citation
 
 If you use this code in your research, please cite the work as described in the `CITATION.cff` file.
-Oguntola o. (2025). Nigeria's Research Productivity : 2025 Thesis Final Code (1.0.0) [Python]. Zenodo. https://doi.org
+Oguntola, O. (2025). Nigeria's research productivity analysis [Code REPO]. Zenodo. https://doi.org/10.5281/zenodo.17053358
 
 ### The Thesis
 
